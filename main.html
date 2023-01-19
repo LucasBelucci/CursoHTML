@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .section-one {
+            width: 200px;
+            height: 150px;
+            background: paleturquoise;
+            border: 5px solid black;
+            padding: 15px;
+        }
+
+        .section-two {
+            background: purple;
+        }
+
+        body nav ul li a {
+            color: teal;
+            text-decoration: none;
+            font-family: sans-serif;
+            display: block;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+
+        nav a:hover {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+
+        }
+
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption {
+            caption-side: top;
+            text-align: center;
+            font-style: italic;
+            font-size: 14px;
+            margin: 5px 0;
+        }
+
+        tfoot td,
+        table th {
+            background: #ddd;
+
+        }
+
+        tfoot td {
+            font-style: italic;
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+        </ul>
+    </nav>
+
+    <div class="responsive-table">
+        <table>
+            <caption>Descrição</caption>
+            <thead>
+                <tr>
+                    <th>Título 1</th>
+                    <th>Título 2</th>
+                    <th>Título 3</th>
+                    <th>Título 4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                    <td>Corpo 4</td>
+                </tr>
+                <tr>
+                    <td colspan="2" rowspan="2">Corpo 1</td>
+
+                    <td>Corpo 3</td>
+                    <td>Corpo 4</td>
+                </tr>
+                <tr>
+                    <td>Corpo 3</td>
+                    <td>Corpo 4</td>
+                </tr>
+                <tr>
+                    <td>Corpo 1</td>
+                    <td>Corpo 2</td>
+                    <td>Corpo 3</td>
+                    <td>Corpo 4</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+
+                    <td colspan="2">Valor</td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+
+    <section class="section-one">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque quaerat, similique
+        ut voluptas reiciendis magni. Placeat quidem dolores quia ducimus, voluptas, quibusdam, expedita nostrum fuga
+        nisi illum iusto ratione! Ab?</section>
+    <section class="section-two">2</section>
+</body>
+
+</html>

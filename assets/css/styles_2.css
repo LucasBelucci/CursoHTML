@@ -1,0 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: flex-start;
+    background: yellow;
+    height: 500px;
+}
+
+.flex-item {
+    background: red;
+}
