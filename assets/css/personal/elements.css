@@ -33,7 +33,7 @@ h1 {
 
 h2 {
     font-size: 6.5rem;
-    line-height: 1.2rem;
+    line-height: 5.5rem;
     margin-bottom: 5rem;
     text-transform: uppercase;
 }
@@ -48,6 +48,26 @@ h6 {
 
 a {
     text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: orange;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: black;
 }
 
 p {
